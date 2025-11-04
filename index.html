@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAC2 Visualització - Galeria de gràfics</title>
+  <title>PAC2 Visualització - Galeria</title>
   <style>
     body {
       font-family: "Segoe UI", Roboto, sans-serif;
       margin: 40px auto;
-      max-width: 900px;
+      max-width: 1000px;
       background-color: #fafafa;
       color: #333;
       line-height: 1.6;
@@ -19,27 +19,29 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
     }
     .card {
       background: white;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: transform 0.2s;
+      transition: transform 0.2s ease;
     }
     .card:hover {
       transform: translateY(-4px);
     }
     img {
       width: 100%;
-      height: auto;
+      height: 200px;
+      object-fit: cover;
       display: block;
     }
     .caption {
-      padding: 10px 15px;
+      padding: 12px 15px;
+      text-align: center;
     }
     a {
       text-decoration: none;
@@ -56,10 +58,11 @@
   <p style="text-align:center">Selecciona un gràfic per visualitzar-lo:</p>
 
   <div class="gallery">
+
     <!-- 📊 Gràfic interactiu Plotly -->
     <div class="card">
       <a href="streamgraph/energia_global.html" target="_blank">
-        <img src="https://raw.githubusercontent.com/lboriaa/PAC2_visualitzacio/main/isotype/isotype.png" alt="Evolució del consum global d’energia primària">
+        <img src="isotype/isotype.png" alt="Evolució del consum global d’energia primària">
       </a>
       <div class="caption">
         <strong>Evolució del consum global d’energia primària</strong><br>
@@ -67,14 +70,17 @@
       </div>
     </div>
 
-    <!-- 🖼️ Exemple d'altre gràfic o imatge -->
+    <!-- 🖼️ Imatge PNG Isotype -->
     <div class="card">
-      <img src="https://raw.githubusercontent.com/lboriaa/PAC2_visualitzacio/main/isotype/isotype.png" alt="Isotype">
+      <a href="isotype/isotype.png" target="_blank">
+        <img src="isotype/isotype.png" alt="Isotype">
+      </a>
       <div class="caption">
         <strong>Isotype</strong><br>
         Imatge PNG del gràfic
       </div>
     </div>
+
   </div>
 
 </body>
