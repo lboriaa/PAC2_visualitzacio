@@ -1,2 +1,11 @@
-# PAC2_visualitzacio
-PAC2 Visualització de dades
+# PAC2 Visualització de dades
+
+## Visualitzacions
+
+- wordcloud
+- stream graph
+- isotype
+
+
+
+
