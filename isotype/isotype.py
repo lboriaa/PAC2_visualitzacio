@@ -54,4 +54,3 @@ else:
     ax.set_ylim(-len(countries) + 0.5, 1)
     plt.subplots_adjust(left=0.2, right=0.9, top=0.85, bottom=0.05)
     plt.show()
-    plt.savefig("isotype.png")
